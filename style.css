@@ -10,12 +10,21 @@ html { box-sizing: border-box;}
 White #FFFFFF
 Dark brown #1D0303
 Hard Red #500801
-Brown #815600....this was swapped for another colour that better matched the mockup */
+Brown #815600....this was swapped for another colour that better matched the mockup 
+
+font families
+font-family: 'Petit Formal Script', cursive;
+font-family: 'Roboto', sans-serif;
+*/
 
 
 /* general styling */
 html {
 color:white;
+}
+
+section {
+    padding: 100 px;
 }
 
 h2 {
@@ -69,45 +78,60 @@ nav a {
     text-decoration: none;
 }
 /* title section styling */
-.title {
+#title {
     background-color:#b97c01;
     font-family: 'Petit Formal Script', cursive;
-    font-size: 562%;
+    font-size: 300%;
     text-align: right;
     margin: 0 auto;
-    
+             
 }
 
-.title .wrapper {
-   
-    
+#title .wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    max-width: 1080px;
+      
+}
+
+#title .image-container, .text-container {
+    flex-basis: 50%;
 }
 
 /* hand crafted section styling */
-.crafted {
+#crafted {
     background-color: #500801;
+    margin: 0 auto;
 }
 
-.crafted .wrapper {
+#crafted .wrapper {
     display: flex;
+    justify-content: space-around;
+
     
 }
 
 /* Gallery styling */
-.collection {
+ .gallery {
     background-color: #b97c01;
-    
-}
+    height: 80vh;
+    margin: 0 auto;
+ }
 
-.collection .h2 {
+ .gallery h2 {
     text-align: center;
-    margin-bottom: 40px;
+ }
 
-}
-
-.gallery .ul {
+ .gallery ul {
     display: flex;
-}
+    justify-content: space-between;
+ }
+
+ .gallery li {
+     flex-basis: 32%;
+     margin-bottom: 80px;
+ }
 
 /* icons styling section */
 .icons {
@@ -120,12 +144,62 @@ nav a {
     background-color: #b97c01;
 }
 
+.trends .wrapper {
+    display: flex;
+}
+
 /* vegan leather styling */
 .leather {
     background-color:#b97c01;
+}
 
+.leather .wrapper {
+    display: flex;
 }
 
 .footer {
     background-color:#500801;
+    display: flex;
+}
+
+.footer .wrapper {
+    display: flex;
+
+}
+
+.footer .nav a {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 125%;
+    text-decoration: none;
+    text-align: left;
+    
+}
+
+
+
+
+/* media query stuff for mobile */
+
+@media (max-width: 768px) {
+    header .wrapper {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    
+}
+
+@media (max-width: 768px) {
+    .gallery ul {
+        flex-direction: column;
+    }
+
+    .gallery li {
+        margin: 0 auto 20px;
+    }
 }
