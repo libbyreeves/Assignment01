@@ -5,3 +5,127 @@ html { box-sizing: border-box;}
 *, *:before, *:after {box-sizing: inherit}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* colour palette
+White #FFFFFF
+Dark brown #1D0303
+Hard Red #500801
+Brown #815600....this was swapped for another colour that better matched the mockup */
+
+
+/* general styling */
+html {
+color:white;
+}
+
+h2 {
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 337.5%;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 125%;
+}
+
+button {
+    color: white;
+    background-color: #1D0303;
+    font-family: 'Petit Formal Script', cursive;
+    padding: 15px;
+    border: none;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* header styling */
+header {
+    height: 100hv;
+    padding: 50px 0;
+    background-color: #b97c01;
+}
+
+nav ul {
+    display: flex;
+    justify-content: left;
+    justify-content: space-evenly;
+    margin-right: 75%;
+    margin-left: 2.5%
+}
+
+nav a {
+    color: #ffffff;
+    font-size: 125%;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+/* title section styling */
+.title {
+    background-color:#b97c01;
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 562%;
+    text-align: right;
+    margin: 0 auto;
+    
+}
+
+.title .wrapper {
+   
+    
+}
+
+/* hand crafted section styling */
+.crafted {
+    background-color: #500801;
+}
+
+.crafted .wrapper {
+    display: flex;
+    
+}
+
+/* Gallery styling */
+.collection {
+    background-color: #b97c01;
+    
+}
+
+.collection .h2 {
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.gallery .ul {
+    display: flex;
+}
+
+/* icons styling section */
+.icons {
+    background-color: #500801;
+    
+}
+
+/* fall trends styling */
+.trends {
+    background-color: #b97c01;
+}
+
+/* vegan leather styling */
+.leather {
+    background-color:#b97c01;
+
+}
+
+.footer {
+    background-color:#500801;
+}
